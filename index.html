@@ -16,7 +16,7 @@
             if(second < 10) seconds = '0' + second;
             //時刻表示
             var timeString = hours + ':' + minutes + ':' + seconds ;
-            document.get.ElementById('clock').innerHTML = timeString;
+            document.getElementById('clock').innerHTML = timeString;
 
             setInterval(updateClock, 1000);
             window.onload = updateClock;
