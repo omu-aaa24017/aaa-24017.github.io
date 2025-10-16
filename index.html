@@ -6,13 +6,11 @@
     <title>Phase 0-1: HTML基礎確認</title>
     <script>
         function updateClock() {
-            // 現在時刻を取得
             var now = new Date();
             var hours = now.getHours();
             var minutes = now.getMinutes();
             var seconds = now.getSeconds();
             
-            // 1桁の場合は0を付ける
             if (hours < 10) hours = '0' + hours;
             if (minutes < 10) minutes = '0' + minutes;
             if (seconds < 10) seconds = '0' + seconds;
